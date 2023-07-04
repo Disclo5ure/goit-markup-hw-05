@@ -456,7 +456,7 @@ header .list-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms var(--quick-anim);
+  transition: background-color var(--quick-anim);
 }
 
 .member-icon-link:hover,
@@ -570,8 +570,7 @@ header .list-item {
   justify-content: center;
   align-items: center;
   padding: 0;
-  transition: background-color var(--quick-anim), border var(--quick-anim),
-    rotate var(--quick-anim);
+  transition: background-color var(--quick-anim), border var(--quick-anim);
 }
 
 .modal-button:hover,
