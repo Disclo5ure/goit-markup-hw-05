@@ -118,6 +118,8 @@ header .list-item {
   padding: 12px 24px;
   border-radius: 4px;
   border: 1px solid var(--cornflower);
+  transition: color var(--quick-anim), background-color var(--quick-anim),
+    box-shadow var(--quick-anim);
 }
 
 .portfolio-item .header {
@@ -138,8 +140,6 @@ header .list-item {
   border: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: color var(--quick-anim), background-color var(--quick-anim),
-    box-shadow var(--quick-anim);
 }
 
 .portfolio-item .link {
@@ -159,17 +159,17 @@ header .list-item {
   overflow: hidden;
 }
 
-.portfolio-item-overlay .text {
-  padding: 40px 32px;
-  color: white;
-}
-
 .portfolio-item-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 40px 32px;
+  font-size: 16px;
+  line-height: 1, 5;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
   background-color: var(--main-blue-color);
   transform: translateY(100%);
   transition: transform var(--quick-anim);
@@ -320,7 +320,7 @@ header .list-item {
   border-radius: 4px;
   display: block;
   min-width: 169px;
-  transition: background-color 250ms var(--quick-anim);
+  transition: background-color var(--quick-anim);
 }
 
 .hero .button:hover,
@@ -499,8 +499,7 @@ header .list-item {
   align-items: center;
   border-radius: 4px;
   color: var(--light-slate);
-  transition: border-color 250ms var(--quick-anim),
-    color 250ms var(--quick-anim);
+  transition: border-color var(--quick-anim), color var(--quick-anim);
 }
 
 .customer-icon-link:hover,
@@ -531,8 +530,7 @@ header .list-item {
   width: 100%;
   height: 100%;
   background: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms var(--quick-anim),
-    visibility 250ms var(--quick-anim);
+  transition: opacity var(--quick-anim), visibility var(--quick-anim);
 }
 
 .is-hidden {
@@ -546,7 +544,7 @@ header .list-item {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: transform 250ms var(--quick-anim);
+  transition: transform var(--quick-anim);
 
   width: 408px;
   min-height: 584px;
@@ -570,8 +568,8 @@ header .list-item {
   justify-content: center;
   align-items: center;
   padding: 0;
-  transition: background-color 250ms var(--quick-anim),
-    border 250ms var(--quick-anim), rotate var(--quick-anim);
+  transition: background-color var(--quick-anim), border var(--quick-anim),
+    rotate var(--quick-anim);
 }
 
 .modal-button:hover,
@@ -587,7 +585,7 @@ header .list-item {
 }
 
 .modal-x {
-  transition: fill 250ms var(--quick-anim);
+  transition: fill var(--quick-anim);
 }
 
 .footer {
