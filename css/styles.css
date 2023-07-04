@@ -145,9 +145,6 @@ header .list-item {
 .portfolio-item .link {
   display: block;
   position: relative;
-}
-
-.portfolio-item {
   transition: box-shadow var(--quick-anim);
 }
 
@@ -178,8 +175,8 @@ header .list-item {
   transition: transform var(--quick-anim);
 }
 
-.portfolio-item:hover .portfolio-item-overlay,
-.portfolio-item:focus .portfolio-item-overlay {
+.portfolio-item .link:hover .portfolio-item-overlay,
+.portfolio-item .link:focus .portfolio-item-overlay {
   transform: translateY(0);
 }
 
@@ -223,6 +220,7 @@ header .list-item {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition: color var(--quick-anim);
 }
 
 .list-item.studio.link,
