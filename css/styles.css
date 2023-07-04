@@ -221,18 +221,24 @@ header .list-item {
   letter-spacing: 0.02em;
 }
 
+.list-item.studio.link,
+.list-item.portfolio.link {
+  color: var(--link-hover-color);
+}
+
 .list-item.link {
   position: relative;
 }
 
-.list-item.link::after {
+.site-nav .list-item::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   display: block;
   width: 100%;
-  height: 5px;
+  height: 4px;
+  border-radius: 2px;
   background-color: var(--link-hover-color);
 }
 
@@ -259,6 +265,7 @@ header .list-item {
 
 .address-nav .link {
   color: var(--main-text-color);
+  transition: colo var(--quick-anim);
 }
 
 .address-nav .link:hover,
@@ -313,6 +320,7 @@ header .list-item {
   border-radius: 4px;
   display: block;
   min-width: 169px;
+  transition: background-color 250ms var(--quick-anim);
 }
 
 .hero .button:hover,
@@ -446,6 +454,7 @@ header .list-item {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms var(--quick-anim);
 }
 
 .member-icon-link:hover,
@@ -490,6 +499,8 @@ header .list-item {
   align-items: center;
   border-radius: 4px;
   color: var(--light-slate);
+  transition: border-color 250ms var(--quick-anim),
+    color 250ms var(--quick-anim);
 }
 
 .customer-icon-link:hover,
@@ -626,12 +637,12 @@ header .list-item {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color var(--quick-anim);
 }
 
 .footer-icon-link:hover,
 .footer-icon-link:focus {
   background-color: #31d0aa;
-  transition: background-color var(--quick-anim);
 }
 
 .footer-icon {
