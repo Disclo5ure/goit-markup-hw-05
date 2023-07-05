@@ -90,7 +90,6 @@ header .list-item {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  margin-bottom: 120px;
 }
 
 .portfolio {
@@ -204,7 +203,6 @@ header .list-item {
 }
 
 .site-nav {
-  width: 261px;
   display: flex;
   align-items: center;
 }
@@ -215,6 +213,7 @@ header .list-item {
 }
 
 .site-nav .list .link {
+  display: block;
   color: var(--main-header-color);
   font-weight: 500;
   font-size: 16px;
@@ -223,8 +222,7 @@ header .list-item {
   transition: color var(--quick-anim);
 }
 
-.list-item.studio.link,
-.list-item.portfolio.link {
+.site-nav .list-item.current {
   color: var(--link-hover-color);
 }
 
@@ -232,7 +230,7 @@ header .list-item {
   position: relative;
 }
 
-.site-nav .list-item::after {
+.site-nav .list-item.current::after {
   content: '';
   position: absolute;
   left: 0;
@@ -293,7 +291,6 @@ header .list-item {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 188px 0;
   gap: 48px;
 }
 
@@ -484,7 +481,6 @@ header .list-item {
   display: flex;
   gap: 24px;
   width: 100%;
-  margin-bottom: 120px;
 }
 
 .customer-icon-container {
@@ -580,8 +576,8 @@ header .list-item {
   rotate: 180deg;
 }
 
-.modal-button:hover svg,
-.modal-button:focus svg {
+.modal-button:hover .modal-x,
+.modal-button:focus .modal-x {
   fill: white;
 }
 
